@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gayathri M — Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="logo">Gayathri <em>M</em></div>
+  <ul class="nav-links">
+    <li><a href="#career">Focus</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#strengths">Strengths</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO / ABOUT ME ── -->
+<section id="hero">
+
+  <h1 class="hero-name">Gayathri M </h1>
+
+  <!-- Organic Photo Frame — click to upload, drag corner to resize -->
+  <div class="photo-wrap" id="photoWrap">
+    <div class="photo-ring"></div>
+    <div class="photo-ring-2"></div>
+    <div class="photo-inner" id="photoBox" title="Click to upload your photo">
+      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4"/>
+        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+      </svg>
+      <span class="ph-label">Click to<br>add photo</span>
+      <input type="file" accept="image/*" id="photoInput"/>
+      <img id="photoImg" alt="Gayathri M"/>
+    </div>
+    <div class="photo-resize-handle" id="resizeHandle" title="Drag to resize">
+      <svg width="7" height="7" viewBox="0 0 7 7" fill="white">
+        <path d="M1 6 L6 1 M3.5 6 L6 3.5" stroke="white" stroke-width="1.2"/>
+      </svg>
+    </div>
+  </div>
+
+  <p class="hero-bio" id="about-text" contenteditable="false">
+    I am a motivated undergraduate with a strong interest in logical reasoning, problem-solving, and structured thinking. I enjoy working with data, identifying patterns, and organising information to understand it better. With a background in <strong>Mathematics and Computer Science</strong> and experience handling structured and unstructured data, I am interested in applying these skills to <strong>financial and business contexts</strong>.
+  </p>
+
+  <div class="scroll-nudge">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+
+</section>
+
+<!-- ── 01 CAREER FOCUS ── -->
+<section id="career">
+  <div class="sec-header reveal">
+    <span class="sec-num">01 /</span>
+    <h2 class="sec-title">Career <em>Focus</em></h2>
+  </div>
+  <div class="career-grid">
+    <div class="career-block reveal">
+      <div class="career-label">Goal</div>
+      <p class="career-text" contenteditable="false">I aim to strengthen my <strong>analysis skills</strong> by identifying trends and supporting decision-making with clear, structured insights.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 02 SKILLS & TOOLS ── -->
+<section id="skills">
+  <div class="sec-header reveal">
+    <span class="sec-num">02 /</span>
+    <h2 class="sec-title">Skills <em>&amp; Tools</em></h2>
+  </div>
+  <div class="skills-wrap reveal">
+
+    <div class="skill-group">
+      <div class="skill-group-label">Data &amp; Analysis</div>
+      <div class="skill-items" id="skill-data">
+        <span class="skill-item deletable" contenteditable="false">Data handling and basic analysis<button class="del-btn" onclick="delItem(this)">×</button></span>
+        <span class="skill-item deletable" contenteditable="false">Logical problem-solving<button class="del-btn" onclick="delItem(this)">×</button></span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-label">Tools &amp; Technologies</div>
+      <div class="skill-items" id="skill-tools">
+        <span class="skill-item deletable" contenteditable="false">Python (data handling &amp; API integration)<button class="del-btn" onclick="delItem(this)">×</button></span>
+        <span class="skill-item deletable" contenteditable="false">MS Excel (formulas &amp; data organization)<button class="del-btn" onclick="delItem(this)">×</button></span>
+        <span class="skill-item deletable" contenteditable="false">REST APIs and JSON processing<button class="del-btn" onclick="delItem(this)">×</button></span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-label">Other Skills</div>
+      <div class="skill-items" id="skill-other">
+        <span class="skill-item deletable" contenteditable="false">Research and documentation<button class="del-btn" onclick="delItem(this)">×</button></span>
+        <span class="skill-item deletable" contenteditable="false">Attention to detail<button class="del-btn" onclick="delItem(this)">×</button></span>
+        <span class="skill-item deletable" contenteditable="false">Time management and adaptability<button class="del-btn" onclick="delItem(this)">×</button></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── 03 PROJECTS ── -->
+<section id="projects">
+  <div class="sec-header reveal">
+    <span class="sec-num">03 /</span>
+    <h2 class="sec-title">Selected <em>Projects</em></h2>
+  </div>
+  <div class="projects-list" id="projects-list">
+
+    <div class="project-item reveal deletable">
+      <div class="proj-meta">
+        <span class="proj-idx">001</span>
+        <div class="proj-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">REST API</span>
+          <span class="stack-tag">JSON</span>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-name" contenteditable="false">Real-Time Currency Converter</div>
+        <ul class="proj-bullets">
+          <li class="deletable" contenteditable="false">Worked with real-time exchange rate data using APIs<button class="del-btn" onclick="delItem(this)">×</button></li>
+          <li class="deletable" contenteditable="false">Processed and converted financial data dynamically<button class="del-btn" onclick="delItem(this)">×</button></li>
+          <li class="deletable" contenteditable="false">Implemented input validation and error handling<button class="del-btn" onclick="delItem(this)">×</button></li>
+          <li class="deletable" contenteditable="false">Extracted and processed JSON data for accurate conversions<button class="del-btn" onclick="delItem(this)">×</button></li>
+        </ul>
+        <span class="proj-learning" contenteditable="false">Working with real-world financial data and ensuring accuracy in data processing</span>
+      </div>
+      <span class="proj-arrow">↗</span>
+      <button class="del-btn" style="right:-8px;top:2.5rem;" onclick="delItem(this)">×</button>
+    </div>
+
+    <div class="project-item reveal deletable">
+      <div class="proj-meta">
+        <span class="proj-idx">002</span>
+        <div class="proj-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">File Handling</span>
+          <span class="stack-tag">venv</span>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-name" contenteditable="false">Syllabus Analyzer</div>
+        <ul class="proj-bullets">
+          <li class="deletable" contenteditable="false">Extracted structured data from unorganized text documents<button class="del-btn" onclick="delItem(this)">×</button></li>
+          <li class="deletable" contenteditable="false">Built logic for parsing and organizing information<button class="del-btn" onclick="delItem(this)">×</button></li>
+          <li class="deletable" contenteditable="false">Designed a modular and scalable data-processing workflow<button class="del-btn" onclick="delItem(this)">×</button></li>
+        </ul>
+        <span class="proj-learning" contenteditable="false">Transforming raw data into structured, usable formats</span>
+      </div>
+      <span class="proj-arrow">↗</span>
+      <button class="del-btn" style="right:-8px;top:2.5rem;" onclick="delItem(this)">×</button>
+    </div>
+
+    <div class="project-item reveal deletable">
+      <div class="proj-meta">
+        <span class="proj-idx">003</span>
+        <div class="proj-stack">
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">npm</span>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-name" contenteditable="false">Campus Connect</div>
+        <ul class="proj-bullets">
+          <li class="deletable" contenteditable="false">Built a structured system for managing and connecting student data<button class="del-btn" onclick="delItem(this)">×</button></li>
+          <li class="deletable" contenteditable="false">Worked with APIs and backend logic to support data flow<button class="del-btn" onclick="delItem(this)">×</button></li>
+          <li class="deletable" contenteditable="false">Managed version control and debugging<button class="del-btn" onclick="delItem(this)">×</button></li>
+        </ul>
+        <span class="proj-learning" contenteditable="false">Understanding data flow and system-level organization</span>
+      </div>
+      <span class="proj-arrow">↗</span>
+      <button class="del-btn" style="right:-8px;top:2.5rem;" onclick="delItem(this)">×</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── 04 CORE STRENGTHS ── -->
+<section id="strengths">
+  <div class="sec-header reveal">
+    <span class="sec-num">04 /</span>
+    <h2 class="sec-title">Core <em>Strengths</em></h2>
+  </div>
+  <div class="strengths-grid reveal">
+    <div class="strength-card deletable">
+      <div class="strength-icon">◎</div>
+      <div class="strength-name" contenteditable="false">Analytical Thinking</div>
+      <button class="del-btn" style="right:8px;top:8px;transform:none;" onclick="delItem(this)">×</button>
+    </div>
+    <div class="strength-card deletable">
+      <div class="strength-icon">◈</div>
+      <div class="strength-name" contenteditable="false">Problem-Solving</div>
+      <button class="del-btn" style="right:8px;top:8px;transform:none;" onclick="delItem(this)">×</button>
+    </div>
+    <div class="strength-card deletable">
+      <div class="strength-icon">△</div>
+      <div class="strength-name" contenteditable="false">Fast Learning Ability</div>
+      <button class="del-btn" style="right:8px;top:8px;transform:none;" onclick="delItem(this)">×</button>
+    </div>
+    <div class="strength-card deletable">
+      <div class="strength-icon">◇</div>
+      <div class="strength-name" contenteditable="false">Attention to Detail</div>
+      <button class="del-btn" style="right:8px;top:8px;transform:none;" onclick="delItem(this)">×</button>
+    </div>
+    <div class="strength-card deletable">
+      <div class="strength-icon">○</div>
+      <div class="strength-name" contenteditable="false">Adaptability</div>
+      <button class="del-btn" style="right:8px;top:8px;transform:none;" onclick="delItem(this)">×</button>
+    </div>
+    <div class="strength-card deletable">
+      <div class="strength-icon">□</div>
+      <div class="strength-name" contenteditable="false">Communication Skills</div>
+      <button class="del-btn" style="right:8px;top:8px;transform:none;" onclick="delItem(this)">×</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── 05 CERTIFICATIONS ── -->
+<section id="certs">
+  <div class="sec-header reveal">
+    <span class="sec-num">05 /</span>
+    <h2 class="sec-title">Certifications <em>&amp; Learning</em></h2>
+  </div>
+  <div class="certs-list" id="certs-list">
+    <div class="cert-item deletable reveal">
+      <span class="cert-num">01</span>
+      <span class="cert-name" contenteditable="false">Digital Marketing using AI Tools</span>
+      <button class="del-btn" onclick="delItem(this)">×</button>
+    </div>
+    <div class="cert-item deletable reveal">
+      <span class="cert-num">02</span>
+      <span class="cert-name" contenteditable="false">Microsoft Azure Fundamentals (Exploratory Learning)</span>
+      <button class="del-btn" onclick="delItem(this)">×</button>
+    </div>
+    <div class="cert-item deletable reveal">
+      <span class="cert-num">03</span>
+      <span class="cert-name" contenteditable="false">Introduction to Ayurveda (Interdisciplinary Learning)</span>
+      <button class="del-btn" onclick="delItem(this)">×</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="sec-header reveal" style="justify-content:center;margin-bottom:1.5rem;">
+    <h2 class="sec-title">Let's <em>Connect</em></h2>
+  </div>
+  <p class="contact-tagline reveal">Open to entry-level opportunities in data analysis and technology. Always happy to talk.</p>
+  <a href="mailto:gayathri08.m@gmail.com" class="contact-email reveal">gayathri08.m@gmail.com</a>
+  <p class="contact-location reveal">📍 Bengaluru, India</p>
+  <div class="socials reveal">
+    <a href="https://www.linkedin.com/in/gayathri-m-659b052b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:778237cb-211e-49f4-b599-92b58fe9fb03" class="social-link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Gayathri M</span>
+  <span>Bengaluru, India</span>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
