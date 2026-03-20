@@ -4,18 +4,15 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gayathri M — Portfolio</title>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- Custom cursor -->
 <div id="cur"></div>
 <div id="cur-ring"></div>
 
-<!-- ── NAV ── -->
+<!-- NAV -->
 <nav>
   <div class="logo">Gayathri <em>M</em></div>
   <ul class="nav-links">
@@ -27,23 +24,16 @@
   </ul>
 </nav>
 
-<!-- ── HERO / ABOUT ME ── -->
+<!-- HERO -->
 <section id="hero">
+  <h1 class="hero-name">Gayathri <strong>M</strong></h1>
 
-  <h1 class="hero-name">Gayathri M </h1>
-
-  <!-- Organic Photo Frame — click to upload, drag corner to resize -->
   <div class="photo-wrap" id="photoWrap">
     <div class="photo-ring"></div>
     <div class="photo-ring-2"></div>
-    <div class="photo-inner" id="photoBox" title="Click to upload your photo">
-      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
-        <circle cx="12" cy="8" r="4"/>
-        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-      </svg>
-      <span class="ph-label">Click to<br>add photo</span>
-      <input type="file" accept="image/*" id="photoInput"/>
-      <img id="photoImg" alt="Gayathri M"/>
+    <div class="photo-inner" id="photoBox">
+      <input type="file" accept="image/*" id="photoInput" style="display:none"/>
+      <img id="photoImg" alt="Gayathri M" src="photo.jpg" style="display:block"/>
     </div>
     <div class="photo-resize-handle" id="resizeHandle" title="Drag to resize">
       <svg width="7" height="7" viewBox="0 0 7 7" fill="white">
@@ -60,10 +50,9 @@
     <div class="scroll-line"></div>
     scroll
   </div>
-
 </section>
 
-<!-- ── 01 CAREER FOCUS ── -->
+<!-- 01 CAREER FOCUS -->
 <section id="career">
   <div class="sec-header reveal">
     <span class="sec-num">01 /</span>
@@ -74,17 +63,20 @@
       <div class="career-label">Goal</div>
       <p class="career-text" contenteditable="false">I aim to strengthen my <strong>analysis skills</strong> by identifying trends and supporting decision-making with clear, structured insights.</p>
     </div>
+    <div class="career-block reveal">
+      <div class="career-label">Target Roles</div>
+      <p class="career-text" contenteditable="false">I am particularly interested in roles that focus on <strong>data interpretation, reporting, and analytical problem-solving</strong> in finance and business.</p>
+    </div>
   </div>
 </section>
 
-<!-- ── 02 SKILLS & TOOLS ── -->
+<!-- 02 SKILLS -->
 <section id="skills">
   <div class="sec-header reveal">
     <span class="sec-num">02 /</span>
     <h2 class="sec-title">Skills <em>&amp; Tools</em></h2>
   </div>
   <div class="skills-wrap reveal">
-
     <div class="skill-group">
       <div class="skill-group-label">Data &amp; Analysis</div>
       <div class="skill-items" id="skill-data">
@@ -92,7 +84,6 @@
         <span class="skill-item deletable" contenteditable="false">Logical problem-solving<button class="del-btn" onclick="delItem(this)">×</button></span>
       </div>
     </div>
-
     <div class="skill-group">
       <div class="skill-group-label">Tools &amp; Technologies</div>
       <div class="skill-items" id="skill-tools">
@@ -101,7 +92,6 @@
         <span class="skill-item deletable" contenteditable="false">REST APIs and JSON processing<button class="del-btn" onclick="delItem(this)">×</button></span>
       </div>
     </div>
-
     <div class="skill-group">
       <div class="skill-group-label">Other Skills</div>
       <div class="skill-items" id="skill-other">
@@ -110,11 +100,10 @@
         <span class="skill-item deletable" contenteditable="false">Time management and adaptability<button class="del-btn" onclick="delItem(this)">×</button></span>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ── 03 PROJECTS ── -->
+<!-- 03 PROJECTS -->
 <section id="projects">
   <div class="sec-header reveal">
     <span class="sec-num">03 /</span>
@@ -192,7 +181,7 @@
   </div>
 </section>
 
-<!-- ── 04 CORE STRENGTHS ── -->
+<!-- 04 CORE STRENGTHS -->
 <section id="strengths">
   <div class="sec-header reveal">
     <span class="sec-num">04 /</span>
@@ -232,7 +221,7 @@
   </div>
 </section>
 
-<!-- ── 05 CERTIFICATIONS ── -->
+<!-- 05 CERTIFICATIONS -->
 <section id="certs">
   <div class="sec-header reveal">
     <span class="sec-num">05 /</span>
@@ -257,7 +246,7 @@
   </div>
 </section>
 
-<!-- ── CONTACT ── -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="sec-header reveal" style="justify-content:center;margin-bottom:1.5rem;">
     <h2 class="sec-title">Let's <em>Connect</em></h2>
@@ -266,8 +255,8 @@
   <a href="mailto:gayathri08.m@gmail.com" class="contact-email reveal">gayathri08.m@gmail.com</a>
   <p class="contact-location reveal">📍 Bengaluru, India</p>
   <div class="socials reveal">
-    <a href="https://www.linkedin.com/in/gayathri-m-659b052b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:778237cb-211e-49f4-b599-92b58fe9fb03" class="social-link" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+    <a href="https://www.linkedin.com/in/gayathri-m-659b052b9" class="social-link" target="_blank">LinkedIn ↗</a>
+    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:778237cb-211e-49f4-b599-92b58fe9fb03" class="social-link" target="_blank">Resume ↗</a>
   </div>
 </section>
 
@@ -276,8 +265,6 @@
   <span>Bengaluru, India</span>
 </footer>
 
-<!-- JavaScript -->
 <script src="script.js"></script>
-
 </body>
 </html>
